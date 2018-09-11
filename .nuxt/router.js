@@ -3,7 +3,6 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
-const _ce729c5c = () => import('../pages/noIE.vue' /* webpackChunkName: "pages/noIE" */).then(m => m.default || m)
 const _3c147fb0 = () => import('../pages/about.vue' /* webpackChunkName: "pages/about" */).then(m => m.default || m)
 const _01ad9aed = () => import('../pages/index.vue' /* webpackChunkName: "pages/index" */).then(m => m.default || m)
 
@@ -65,11 +64,6 @@ export function createRouter () {
     linkExactActiveClass: 'nuxt-link-exact-active',
     scrollBehavior,
     routes: [
-		{
-			path: "/noIE",
-			component: _ce729c5c,
-			name: "noIE"
-		},
 		{
 			path: "/about",
 			component: _3c147fb0,
